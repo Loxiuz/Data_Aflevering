@@ -1,20 +1,39 @@
 "use strict";
 
 const lincoln = {
-  image:
-    "https://static.wikia.nocookie.net/southpark/images/1/10/Abraham-lincoln.png/revision/latest/scale-to-width-down/182?cb=20170411105546",
   name: "Abraham Lincoln",
-  age: 56,
-  gender: "Male",
+  nickname: null,
+  image: "Images/Abraham-lincoln.png", //Burde være en kilde fra internettet?
   occupation: "16th President of the United States",
-  schoolGrade: "None",
-  religion: "None",
-  catchphrase: "None",
+  age: 56,
+  voicedBy: "Trey Parker",
+  gender: "Male",
+  religion: null,
+  catchphrase: null,
   hairColor: "Grey",
+  schoolGrade: null,
   episodes: "S11 E14",
   appearances: 1,
   firstAppearance: "S11 E14",
-  voicedBy: "Trey Parker",
 };
 
 console.log(lincoln);
+
+function showCharacter(character) {
+  document.querySelector("#name").textContent = character.name;
+  document.querySelector("#image").src = character.image;
+  document.querySelector("#occupation").textContent = character.occupation;
+  document.querySelector("#age").textContent = character.age;
+  document.querySelector("#voicedBy").textContent = character.voicedBy;
+  document.querySelector("#gender").textContent = character.gender;
+  document.querySelector("#religion").textContent = character.religion;
+  document.querySelector("#catchphrase").textContent = character.catchphrase;
+  document.querySelector("#hairColor").textContent = character.hairColor;
+  document.querySelector("#schoolGrade").textContent = character.schoolGrade;
+  document.querySelector("#episodes").textContent = character.episodes;
+  document.querySelector("#appearances").textContent = character.appearances;
+  document.querySelector("#firstAppearance").textContent =
+    character.firstAppearance;
+}
+
+showCharacter(lincoln);
