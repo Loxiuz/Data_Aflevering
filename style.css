@@ -2,23 +2,27 @@ body {
   margin: 0;
   background-color: green;
 }
+
 header {
   background-color: rgb(137, 216, 137);
   text-align: center;
   position: fixed;
   width: 100%;
 }
+
 footer {
   background-color: rgb(137, 216, 137);
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  /* padding: 1%; */
+  font-size: small;
 }
+
 dialog {
   background-color: rgb(137, 216, 137);
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
