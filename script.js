@@ -24,7 +24,11 @@ async function start() {
   const lincoln = await getCharacter(
     "https://raw.githubusercontent.com/Loxiuz/Data_Aflevering/main/data/lincoln.json"
   );
+  const aguilera = await getCharacter(
+    "https://raw.githubusercontent.com/Maltemork/south-park-app/main/data/christinaAguilera.json"
+  );
 
+  showCharacter(aguilera);
   showCharacter(lincoln);
 }
 
