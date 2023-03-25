@@ -41,7 +41,7 @@ dialog {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 15%;
-    row-gap: 4%;
+    row-gap: 2%;
   }
 }
 @media (min-width: 1000px) {

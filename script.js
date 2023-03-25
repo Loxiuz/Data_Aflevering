@@ -6,7 +6,8 @@ function start() {
   const lincoln = {
     name: "Abraham Lincoln",
     nickname: null,
-    image: "", //"Images/Abraham-lincoln.png", //Burde være en kilde fra internettet?
+    image:
+      "https://static.wikia.nocookie.net/southpark/images/1/10/Abraham-lincoln.png/", //Burde være en kilde fra internettet?
     occupation: "16th President of the United States",
     age: 56,
     voicedBy: "Trey Parker",
