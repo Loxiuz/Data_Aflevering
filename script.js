@@ -2,25 +2,28 @@
 
 window.addEventListener("load", start);
 
-function start() {
-  const lincoln = {
-    name: "Abraham Lincoln",
-    nickname: null,
-    image:
-      "https://static.wikia.nocookie.net/southpark/images/1/10/Abraham-lincoln.png/", //Burde være en kilde fra internettet?
-    occupation: "16th President of the United States",
-    age: 56,
-    voicedBy: "Trey Parker",
-    gender: "Male",
-    religion: null,
-    catchphrase: null,
-    hairColor: "Grey",
-    schoolGrade: null,
-    episodes: "S11 E14",
-    appearances: 1,
-    firstAppearance: "S11 E14",
-  };
-  console.log(lincoln);
+async function start() {
+  // const lincoln = {
+  //   name: "Abraham Lincoln",
+  //   nickname: null,
+  //   image:
+  //     "https://static.wikia.nocookie.net/southpark/images/1/10/Abraham-lincoln.png/", //Burde være en kilde fra internettet?
+  //   occupation: "16th President of the United States",
+  //   age: 56,
+  //   voicedBy: "Trey Parker",
+  //   gender: "Male",
+  //   religion: null,
+  //   catchphrase: null,
+  //   hairColor: "Grey",
+  //   schoolGrade: null,
+  //   episodes: "S11 E14",
+  //   appearances: 1,
+  //   firstAppearance: "S11 E14",
+  // };
+
+  const lincoln = await getCharacter(
+    "https://raw.githubusercontent.com/Loxiuz/Data_Aflevering/main/data/lincoln.json"
+  );
 
   showCharacter(lincoln);
 }
@@ -64,4 +67,11 @@ function showCharacter(character) {
     dialog.insertAdjacentHTML("beforeend", dialogHtml);
     dialog.showModal();
   }
+}
+
+async function getCharacter(url) {
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data);
+  return data;
 }
