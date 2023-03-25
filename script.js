@@ -33,7 +33,7 @@ function showCharacter(character) {
   function characterClicked() {
     console.log(character);
     const dialogHtml = /* html */ `
-      <p>Name: ${character.name}</p>
+      <h2>${character.name}</h2>
       <p>Nickname: ${character.nickname}</p>
       <image src="${character.image}" />
       <p>Occupation: ${character.occupation}</p>

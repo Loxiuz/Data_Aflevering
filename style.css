@@ -21,6 +21,7 @@ footer {
 
 dialog {
   background-color: rgb(137, 216, 137);
+  width: 30%;
 }
 
 .grid-container {
