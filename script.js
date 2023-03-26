@@ -9,9 +9,77 @@ async function start() {
   const aguilera = await getCharacter(
     "https://raw.githubusercontent.com/Maltemork/south-park-app/main/data/christinaAguilera.json"
   );
+  const black = await getCharacter(
+    "https://raw.githubusercontent.com/Abdiox/South-park1/main/Data/southPark.json"
+  );
+  const dewgong = await getCharacter(
+    "https://raw.githubusercontent.com/AishaBulalle/3-aflevering/main/dewgong.json"
+  );
+  const obama = await getCharacter(
+    "https://raw.githubusercontent.com/AliHMohammad/Data-Ali/main/obamaChar.json"
+  );
+  const leopold = await getCharacter(
+    "https://raw.githubusercontent.com/Asbjoernemil/data-assignment/main/data/characters.json"
+  );
+  const jimmy = await getCharacter(
+    "https://raw.githubusercontent.com/Forkeh/South-Park-App/main/data/jimmy.json"
+  );
+  const eric = await getCharacter(
+    "https://raw.githubusercontent.com/Bindholt/Data-Projekt/main/data/cartman.json"
+  );
+  const tuong = await getCharacter(
+    "https://raw.githubusercontent.com/TheDanishMexican/object-south-park/main/data/app.json"
+  );
+  const fosse = await getCharacter(
+    "https://raw.githubusercontent.com/frva0001/data/main/data/fosseMcDonald.json"
+  );
+  const randy = await getCharacter(
+    "https://raw.githubusercontent.com/MadsFolkmann/Data-app-kode/main/data/randy.json"
+  );
+  const mackey = await getCharacter(
+    "https://raw.githubusercontent.com/MaxusTheOne/data_project/main/data/mrMackey.json"
+  );
+  const kenneth = await getCharacter(
+    "https://raw.githubusercontent.com/Mart0808DK/Data-fetch-projekt/main/kenny.json"
+  );
+  const watortle = await getCharacter(
+    "https://raw.githubusercontent.com/naja0001/DATA.projekt/main/Data/pokemon.JSON"
+  );
+  const wendy = await getCharacter(
+    "https://raw.githubusercontent.com/osman-butt/data-app/main/wendy.json"
+  );
+  const john = await getCharacter(
+    "https://raw.githubusercontent.com/rarogbennu/SP/master/data/jfk.json"
+  );
+  const tom = await getCharacter(
+    "https://raw.githubusercontent.com/svdf18/SPobjects/main/data/tomcruise.json"
+  );
+  const jack = await getCharacter(
+    "https://raw.githubusercontent.com/YawHB/South_Park_Project/main/data/jack.json"
+  );
+  const paris = await getCharacter(
+    "https://raw.githubusercontent.com/Tunafan/southpark_db/main/South%20Park%20db/data/paris.json"
+  );
 
   showCharacter(aguilera);
   showCharacter(lincoln);
+  showCharacter(black);
+  showCharacter(dewgong);
+  showCharacter(obama);
+  showCharacter(leopold);
+  showCharacter(jimmy);
+  showCharacter(eric);
+  showCharacter(tuong);
+  showCharacter(fosse);
+  showCharacter(randy);
+  showCharacter(mackey);
+  showCharacter(kenneth);
+  showCharacter(watortle);
+  showCharacter(wendy);
+  showCharacter(john);
+  showCharacter(tom);
+  showCharacter(jack);
+  showCharacter(paris);
 }
 
 function showCharacter(character) {
