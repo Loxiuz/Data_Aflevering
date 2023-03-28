@@ -43,6 +43,9 @@ function showCharacter(character) {
       <p>Episodes: ${character.episodes}</p>
       <p>Appearances: ${character.appearances}</p>
       <p>First appearance: ${character.firstAppearance}</p>
+      <form method="dialog">
+		    <button>Close</button>
+      </form>
     `;
     const dialog = document.querySelector("dialog");
     dialog.innerHTML = "";

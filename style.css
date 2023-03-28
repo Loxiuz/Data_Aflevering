@@ -8,6 +8,7 @@ header {
   text-align: center;
   position: fixed;
   width: 100%;
+  box-shadow: 0px 0px 20px;
 }
 
 footer {
@@ -17,6 +18,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: small;
+  box-shadow: 0px 0px 20px;
 }
 
 dialog {
@@ -26,6 +28,14 @@ dialog {
 }
 img {
   width: 100%;
+}
+button {
+  position: relative;
+  left: 75%;
+  background-color: yellow;
+  border-radius: 25px;
+  font-size: large;
+  box-shadow: 0px 0px 10px yellow;
 }
 
 .grid-container {
