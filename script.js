@@ -29,20 +29,25 @@ function showCharacter(character) {
   function characterClicked() {
     console.log(character);
     const dialogHtml = /* html */ `
-      <h2>${character.name}</h2>
-      <p><span>Nickname:</span> ${character.nickname}</p>
-      <image src="${character.image}" />
-      <p><span>Occupation:</span> ${character.occupation}</p>
-      <p><span>Age:</span> ${character.age}</p>
-      <p><span>Voiced by:</span> ${character.voicedBy}</p>
-      <p><span>Gender:</span> ${character.gender}</p>
-      <p><span>Religion:</span> ${character.religion}</p>
-      <p><span>Catchphrase:</span> ${character.catchPhrase}</p>
-      <p><span>Hair color:</span> ${character.hairColor}</p>
-      <p><span>School grade:</span> ${character.schoolGrade}</p>
-      <p><span>Episodes:</span> ${character.episodes}</p>
-      <p><span>Appearances:</span> ${character.appearances}</p>
-      <p><span>First appearance:</span> ${character.firstAppearance}</p>
+      <div>
+        <h2>${character.name}</h2>
+        <p><span>Nickname:</span> ${character.nickname}</p>
+        <image src="${character.image}" />
+      </div>
+      <div>
+        <p><span>Occupation:</span> ${character.occupation}</p>
+        <p><span>Age:</span> ${character.age}</p>
+        <p><span>Voiced by:</span> ${character.voicedBy}</p>
+        <p><span>Gender:</span> ${character.gender}</p>
+        <p><span>Religion:</span> ${character.religion}</p>
+        <p><span>Catchphrase:</span> ${character.catchPhrase}</p>
+        <p><span>Hair color:</span> ${character.hairColor}</p>
+        <p><span>School grade:</span> ${character.schoolGrade}</p>
+        <p><span>Episodes:</span> ${character.episodes}</p>
+        <p><span>Appearances:</span> ${character.appearances}</p>
+        <p><span>First appearance:</span> ${character.firstAppearance}</p>
+      </div>
+      
       <form method="dialog">
 		    <button>Close</button>
       </form>
