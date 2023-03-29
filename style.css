@@ -37,6 +37,9 @@ button {
   font-size: large;
   box-shadow: 0px 0px 10px yellow;
 }
+span {
+  font-weight: bold;
+}
 
 .grid-container {
   display: grid;

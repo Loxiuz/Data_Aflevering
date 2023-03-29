@@ -15,9 +15,9 @@ function showCharacter(character) {
     <div class="grid-item">
       <h2>${character.name}</h2>
       <image src="${character.image}" />
-      <p>Age: ${character.age}</p>
-      <p>Gender: ${character.gender}</p>
-      <p>Voiced by: ${character.voicedBy}</p>
+      <p><span>Age:</span> ${character.age}</p>
+      <p><span>Gender:</span> ${character.gender}</p>
+      <p><span>Voiced by:</span> ${character.voicedBy}</p>
     </div>
   `;
 
@@ -30,19 +30,19 @@ function showCharacter(character) {
     console.log(character);
     const dialogHtml = /* html */ `
       <h2>${character.name}</h2>
-      <p>Nickname: ${character.nickname}</p>
+      <p><span>Nickname:</span> ${character.nickname}</p>
       <image src="${character.image}" />
-      <p>Occupation: ${character.occupation}</p>
-      <p>Age: ${character.age}</p>
-      <p>Voiced by: ${character.voicedBy}</p>
-      <p>Gender: ${character.gender}</p>
-      <p>Religion: ${character.religion}</p>
-      <p>Catchphrase: ${character.catchPhrase}</p>
-      <p>Hair color: ${character.hairColor}</p>
-      <p>School grade: ${character.schoolGrade}</p>
-      <p>Episodes: ${character.episodes}</p>
-      <p>Appearances: ${character.appearances}</p>
-      <p>First appearance: ${character.firstAppearance}</p>
+      <p><span>Occupation:</span> ${character.occupation}</p>
+      <p><span>Age:</span> ${character.age}</p>
+      <p><span>Voiced by:</span> ${character.voicedBy}</p>
+      <p><span>Gender:</span> ${character.gender}</p>
+      <p><span>Religion:</span> ${character.religion}</p>
+      <p><span>Catchphrase:</span> ${character.catchPhrase}</p>
+      <p><span>Hair color:</span> ${character.hairColor}</p>
+      <p><span>School grade:</span> ${character.schoolGrade}</p>
+      <p><span>Episodes:</span> ${character.episodes}</p>
+      <p><span>Appearances:</span> ${character.appearances}</p>
+      <p><span>First appearance:</span> ${character.firstAppearance}</p>
       <form method="dialog">
 		    <button>Close</button>
       </form>
