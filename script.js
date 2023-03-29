@@ -37,7 +37,7 @@ function showCharacter(character) {
       <p>Voiced by: ${character.voicedBy}</p>
       <p>Gender: ${character.gender}</p>
       <p>Religion: ${character.religion}</p>
-      <p>Catchphrase: ${character.catchphrase}</p>
+      <p>Catchphrase: ${character.catchPhrase}</p>
       <p>Hair color: ${character.hairColor}</p>
       <p>School grade: ${character.schoolGrade}</p>
       <p>Episodes: ${character.episodes}</p>
