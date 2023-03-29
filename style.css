@@ -9,6 +9,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: 0px 0px 20px;
+  z-index: 9999;
 }
 
 footer {
@@ -79,4 +80,15 @@ span {
   padding-right: 4%;
   border-radius: 20px;
   box-shadow: 0px 0px 10px;
+}
+.grid-item:hover {
+  box-shadow: 0px 0px 25px white;
+  animation-name: zoom_in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom_in {
+  100% {
+    transform: scale(1.05);
+  }
 }
