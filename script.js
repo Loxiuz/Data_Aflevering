@@ -36,6 +36,11 @@ function showCharacter(character) {
           <image src="${character.image}" />
         </td>
         <td  class = "dialog-info">
+          <p>${character.name} is a 
+          ${character.gender.toLowerCase()} at 
+          ${character.age} years old and is voiced by 
+          ${character.voicedBy}</p>
+          
           <p><span>Occupation:</span> ${character.occupation}</p>
           <p><span>Age:</span> ${character.age}</p>
           <p><span>Voiced by:</span> ${character.voicedBy}</p>
