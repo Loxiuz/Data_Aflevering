@@ -20,7 +20,6 @@ function showCharacter(character) {
       <p><span>Voiced by:</span> ${character.voicedBy}</p>
     </div>
   `;
-
   document.querySelector("#characters").insertAdjacentHTML("beforeend", html);
   document
     .querySelector("#characters div:last-child")
@@ -29,9 +28,14 @@ function showCharacter(character) {
   function characterClicked() {
     console.log(character);
     const dialogHtml = /* html */ `
+    <table>
+    <tr>
+    <td>
       <h2>${character.name}</h2>
       <p><span>Nickname:</span> ${character.nickname}</p>
       <image src="${character.image}" />
+    </td>
+    <td  class = "dialog-info">
       <p><span>Occupation:</span> ${character.occupation}</p>
       <p><span>Age:</span> ${character.age}</p>
       <p><span>Voiced by:</span> ${character.voicedBy}</p>
@@ -43,9 +47,12 @@ function showCharacter(character) {
       <p><span>Episodes:</span> ${character.episodes}</p>
       <p><span>Appearances:</span> ${character.appearances}</p>
       <p><span>First appearance:</span> ${character.firstAppearance}</p>
-      <form method="dialog">
-		    <button>Close</button>
-      </form>
+    </td>
+    </tr>
+    </table>
+    <form method="dialog">
+		  <button>Close</button>
+    </form>
     `;
     const dialog = document.querySelector("dialog");
     dialog.innerHTML = "";
