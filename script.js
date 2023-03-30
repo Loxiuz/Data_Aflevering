@@ -30,7 +30,7 @@ function showCharacter(character) {
     const dialogHtml = /* html */ `
     <table>
       <tr>
-        <td>
+        <td class="dialog-image">
           <h2>${character.name}</h2>
           <p><span>Nickname:</span> ${character.nickname}</p>
           <image src="${character.image}" />
@@ -60,6 +60,7 @@ function showCharacter(character) {
     </form>
     `;
     const dialog = document.querySelector("dialog");
+    dialog.classList.add("zoom_in_2");
     dialog.innerHTML = "";
     dialog.insertAdjacentHTML("beforeend", dialogHtml);
     dialog.showModal();
