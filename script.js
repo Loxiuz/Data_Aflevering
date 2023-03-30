@@ -4,12 +4,13 @@ window.addEventListener("load", start);
 
 async function start() {
   const characters = await getCharacters(
+    // Fetch data to an array
     "https://cederdorff.github.io/dat-js/05-data/southpark.json"
   );
-
+  // Show each character in the array
   characters.forEach(showCharacter);
 }
-
+// Show character from a JSON objekt
 function showCharacter(character) {
   const html = /* html */ `
     <div class="grid-item">
@@ -24,7 +25,7 @@ function showCharacter(character) {
   document
     .querySelector("#characters div:last-child")
     .addEventListener("click", characterClicked);
-
+  // Contents of dialog
   function characterClicked() {
     console.log(character);
     const dialogHtml = /* html */ `
@@ -58,6 +59,7 @@ function showCharacter(character) {
 		  <button>Close</button>
     </form>
     `;
+    // Adding the content and showing dialog
     const dialog = document.querySelector("dialog");
     dialog.classList.add("zoom_in_2");
     dialog.innerHTML = "";
@@ -65,7 +67,7 @@ function showCharacter(character) {
     dialog.showModal();
   }
 }
-
+// Fetches JSON from a url
 async function getCharacters(url) {
   const response = await fetch(url);
   const data = await response.json();
